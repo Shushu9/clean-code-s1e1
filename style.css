@@ -140,8 +140,9 @@
     width: 226px;
 }
 
-.task .inpt[type="text"] {
+.task .text-field {
     width: 226px;
+    display: none;
 }
 
 .btn__img {
@@ -161,14 +162,13 @@
 }
 
 /* Edit Task */
+.task .text-field {
+    display: none;
+}
 
 .editMode .text-field {
     display: inline-block;
     width: 224px;
-}
-
-.hidden {
-    display: none;
 }
 
 .editMode .task__name {
