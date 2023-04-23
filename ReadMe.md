@@ -1,5 +1,11 @@
 <img width="1199" alt="code-quality-task-screenshot" src="https://user-images.githubusercontent.com/8201843/113413843-4080fb80-93c4-11eb-9f20-15e4b4c1e430.png">
 
+Дэплой [link](https://shushu9.github.io/clean-code-s1e1/)
+
+Задание [link](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md) 
+
+Решение задания выполненно в ветке clean-code-s1e1
+
 # Функционал приложения :
 
     - Добавление нового элемента в список задач "TODO"
