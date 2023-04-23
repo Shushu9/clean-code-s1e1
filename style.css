@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.main-page {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -12,7 +12,7 @@ body {
     text-align: right;
 }
 
-.promo img {
+.promo-img {
     width: 100%;
 }
 
@@ -32,7 +32,14 @@ body {
     margin: 0 auto 0;
 }
 
-.task {
+.task-name {
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1
+}
+
+.text-field {
+    outline: none;
     width: 56%;
     display: inline-block;
     flex-grow: 1
@@ -42,22 +49,19 @@ body {
     display: flex;
 }
 
-ul {
+#active-tasks,
+#completed-tasks {
     margin: 0;
     padding: 0px;
 }
 
-li,
-h3 {
+.task-info,
+.title {
     list-style: none;
 }
 
-input,
-button {
+.btn {
     outline: none;
-}
-
-button {
     background: none;
     border: 0px;
     color: #888;
@@ -67,13 +71,13 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
     color: #3a3a3a;
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.title,
+.lble[for="new-task"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -83,7 +87,7 @@ label[for="new-task"] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.inpt[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -94,77 +98,78 @@ input[type="text"] {
     border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
+    outline: none;
 }
 
-input[type="text"]:focus {
+.inpt[type="text"]:focus {
     color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.lble[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task {
     width: 318px;
 }
 
 /* Task list */
-li {
+.task-info {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-li>* {
+.task-info>* {
     vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+.task-info>.inpt[type="checkbox"] {
     margin: 0 10px;
 }
 
-li>label {
+.task-name {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li>input[type="text"] {
+.task-info>.inpt[type="text"] {
     width: 226px
 }
 
-button.delete img {
+.btn-img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.btn-img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks .task-name {
     text-decoration: line-through color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
-    display: none
-}
 
-ul li.editMode input[type=text] {
+.editMode .text-field {
     display: inline-block;
     width: 224px
 }
 
-ul li.editMode label {
+.hidden {
+    display: none;
+}
+
+.editMode .task-name {
     display: none;
 }
