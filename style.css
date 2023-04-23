@@ -35,14 +35,14 @@
 .task-name {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .text-field {
     outline: none;
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .task-wrapper {
@@ -141,7 +141,7 @@
 }
 
 .task-info>.inpt[type="text"] {
-    width: 226px
+    width: 226px;
 }
 
 .btn-img {
@@ -156,14 +156,15 @@
 
 /* Completed */
 #completed-tasks .task-name {
-    text-decoration: line-through color: #888;
+    text-decoration: line-through;
+    color: #888;
 }
 
 /* Edit Task */
 
 .editMode .text-field {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .hidden {
